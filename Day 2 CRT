@@ -42,4 +42,19 @@ int main() {
 
     return 0;
 }
+//problem 4 -- ternary operator
+//find the greater number among 2
+#include <iostream>
+using namespace std;
 
+int main() {
+  int a, b;
+  int max_Number;
+  
+  cin >> a >> b;
+  // Ternary Operator
+  max_Number = (a>b) ? a : b;
+  
+  cout << max_Number;
+  return 0;
+}
