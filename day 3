@@ -18,3 +18,17 @@ int main(){
         for (int i = 10; i >= 1; i--)
         cout << i << " ";
     }
+// problem 4
+// print 10 to 1 usign a while loop
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i = 10;
+    while (i >= 1){
+        cout << i << " ";
+        i--;
+    }
+    return 0;
+}
