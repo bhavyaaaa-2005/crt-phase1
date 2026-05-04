@@ -55,3 +55,24 @@ for(int k = 1; k <= i; k++) {
 cout << "\n";
 }
 }
+
+
+
+// problem 5
+// print a rectangle
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int row, col;
+    cin >> row;
+    cin >> col;
+    
+    for(int i = 1; i <= row; i++) {
+        for(int j = 1; j <= col; j++){
+            cout <<"*";
+        }
+        cout <<"\n";
+    }
+}
