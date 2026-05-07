@@ -1,0 +1,24 @@
+// program -- 1
+// access specifier
+// 7. 2-- public
+#include <iostream>
+using namespace std; 
+
+class BandAccount {
+    
+private:
+    int balance = 5000;
+    
+public:
+void showBalance() {
+    cout << "Balance in your account is: " << balance;
+}
+
+};
+
+int main() {
+    BandAccount myaccount;
+    myaccount.showBalance();
+}
+
+
