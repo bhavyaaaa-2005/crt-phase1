@@ -95,3 +95,29 @@ int main() {
     obj1.parent1::giveMeMoney();
     obj1.parent2::giveMeMoney();
 }
+
+
+// types -- 1.5 hybrid inheritance
+
+class A {
+    public:
+    void print(){
+        cout << "BJP wons";
+    }
+};
+class B : virtual public A {
+    
+};
+
+class C : virtual public A {
+    
+};
+
+class D : public B, public C {
+    
+};
+
+int main() {
+    D obj1;
+    obj1.print();
+}
