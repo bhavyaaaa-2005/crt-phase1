@@ -26,3 +26,41 @@ int main() {
     
     return 0;
 }
+
+
+// program 2
+// inheritance
+// types -- 1.2 multilevel inheritance
+
+#include <iostream>
+using namespace std;
+
+class vehicle {
+    public:
+    void start() {
+        cout << "vehicle starts" << "\n";
+    }
+};
+
+class car :public vehicle {
+    public:
+    void drive() {
+        cout << "car is running" << "\n";
+    }
+};
+
+class speedoMeter : public car {
+    public:
+    void speed(){
+        cout << "car is running at 60km/h" <<"\n";
+    }
+};
+
+int main() {
+    speedoMeter obj1;
+    obj1.speed();
+    obj1.drive();
+    obj1.start();
+    
+    return 0;
+}
