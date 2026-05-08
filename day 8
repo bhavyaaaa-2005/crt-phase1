@@ -153,3 +153,19 @@ int main() {
     D obj1;
     obj1.print();
 }
+
+
+// problem -- 2
+// polymorphism
+// polymorphism means one name but many forms
+// same functions behave differently depending on te type of the object it called
+// two types
+// compile time polymorphism -- function overloading -- static
+// resolved at compile time
+// function overloads -- same function name, but different parameters
+// faster execution
+// run time polymorphism -- function overriding -- dynamic
+// resolved at run time
+// function runtime -- same function name, same parameters, but different class
+// uses a virtual keyword in the base class
+// achieving this through the concept of inheritance
