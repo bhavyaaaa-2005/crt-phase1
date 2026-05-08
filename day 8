@@ -64,3 +64,34 @@ int main() {
     
     return 0;
 }
+
+
+#include <iostream>
+using namespace std;
+
+// type -- 1.4 multiple inheritance
+
+class parent1 {
+    public:
+   void giveMeMoney(){
+        cout << "Mummy paisa do mujhe" << "\n";
+    }
+};
+
+class parent2 {
+    public:
+    void giveMeMoney(){
+        cout << "Papa paisa do mujhe" << "\n";
+    }
+};
+
+class child : public parent1, public parent2 {
+    //no logic
+};
+
+int main() {
+    child obj1;
+    //obj1.giveMeMoney();
+    obj1.parent1::giveMeMoney();
+    obj1.parent2::giveMeMoney();
+}
